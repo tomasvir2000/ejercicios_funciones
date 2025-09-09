@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main() {
+    srand(time(NULL));
+    int valor = rand() % 13 + 1;
+    if (valor == 1) {
+        printf("A");
+    } else if (valor == 11) {
+        printf("J");
+    } else if (valor == 12) {
+        printf("Q");
+    } else if (valor == 13) {
+        printf("K");
+    } else {
+        printf("%d", valor);
+    }
+    return 0;
+}
